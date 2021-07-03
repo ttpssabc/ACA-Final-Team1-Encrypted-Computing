@@ -60,7 +60,6 @@ cl_kernel cl_k_apply_galois;
 cl_kernel cl_k_ntt;
 cl_kernel cl_k_scale;
 cl_kernel cl_k_lift;
-cl_kernel cl_k_mulInv;
 
 cl_mem GM_dense100[13][4];
 cl_mem GM_mask[4];
@@ -71,10 +70,11 @@ cl_mem GM_rlk[4][7][2];
 cl_mem GM_ct[25][4][2];
 cl_mem GM_gk[4][25][7][2];
 
+cl_mem temp0[4];
 cl_mem temp1[2];
 cl_mem temp2[2];
-cl_mem temp3[3];
-cl_mem temp4[3];
+cl_mem temp3[4];
+cl_mem temp4[4];
 cl_mem temp5[2];
 cl_mem temp6[7];
 cl_mem temp7[7];
@@ -389,87 +389,77 @@ int main(int argc, char* argv[])
   // Step 3.4: Create a Kernels
   // -------------------------------------------------------------
 
-  #ifdef ALL_MESSAGES
-  cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
-  #endif
-  cl_k_add = clCreateKernel(Program, "K_add", &errCode);
-  if (errCode != CL_SUCCESS) {
-    cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
-    return EXIT_FAILURE;
-  }
+   #ifdef ALL_MESSAGES
+   cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
+   #endif
+   cl_k_add = clCreateKernel(Program, "K_add", &errCode);
+   if (errCode != CL_SUCCESS) {
+     cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
+     return EXIT_FAILURE;
+   }
 
-  #ifdef ALL_MESSAGES
-  cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
-  #endif
-  cl_k_mulWise = clCreateKernel(Program, "K_mulWise", &errCode);
-  if (errCode != CL_SUCCESS) {
-    cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
-    return EXIT_FAILURE;
-  }
+   #ifdef ALL_MESSAGES
+   cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
+   #endif
+   cl_k_mulWise = clCreateKernel(Program, "K_mulWise", &errCode);
+   if (errCode != CL_SUCCESS) {
+     cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
+     return EXIT_FAILURE;
+   }
 
-  #ifdef ALL_MESSAGES
-  cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
-  #endif
-  cl_k_mulConst = clCreateKernel(Program, "K_mulConst", &errCode);
-  if (errCode != CL_SUCCESS) {
-    cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
-    return EXIT_FAILURE;
-  }
+   #ifdef ALL_MESSAGES
+   cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
+   #endif
+   cl_k_mulConst = clCreateKernel(Program, "K_mulConst", &errCode);
+   if (errCode != CL_SUCCESS) {
+     cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
+     return EXIT_FAILURE;
+   }
 
-  #ifdef ALL_MESSAGES
-  cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
-  #endif
-  cl_k_mov = clCreateKernel(Program, "K_mov", &errCode);
-  if (errCode != CL_SUCCESS) {
-    cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
-    return EXIT_FAILURE;
-  }
+   #ifdef ALL_MESSAGES
+   cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
+   #endif
+   cl_k_mov = clCreateKernel(Program, "K_mov", &errCode);
+   if (errCode != CL_SUCCESS) {
+     cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
+     return EXIT_FAILURE;
+   }
 
-  #ifdef ALL_MESSAGES
-  cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
-  #endif
-  cl_k_apply_galois = clCreateKernel(Program, "K_apply_galois", &errCode);
-  if (errCode != CL_SUCCESS) {
-    cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
-    return EXIT_FAILURE;
-  }
+   #ifdef ALL_MESSAGES
+   cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
+   #endif
+   cl_k_apply_galois = clCreateKernel(Program, "K_apply_galois", &errCode);
+   if (errCode != CL_SUCCESS) {
+     cout << endl << "HOST-Error: Failed to create K_KVConstAdd" << endl << endl;
+     return EXIT_FAILURE;
+   }
 
-  #ifdef ALL_MESSAGES
-  cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
-  #endif
-  cl_k_ntt = clCreateKernel(Program, "K_ntt", &errCode);
-  if (errCode != CL_SUCCESS) {
-    cout << endl << "HOST-Error: Failed to create K_ntt" << endl << endl;
-    return EXIT_FAILURE;
-  }
+   #ifdef ALL_MESSAGES
+   cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
+   #endif
+   cl_k_ntt = clCreateKernel(Program, "K_ntt", &errCode);
+   if (errCode != CL_SUCCESS) {
+     cout << endl << "HOST-Error: Failed to create K_ntt" << endl << endl;
+     return EXIT_FAILURE;
+   }
 
-  #ifdef ALL_MESSAGES
-  cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
-  #endif
-  cl_k_scale = clCreateKernel(Program, "K_scale", &errCode);
-  if (errCode != CL_SUCCESS) {
-    cout << endl << "HOST-Error: Failed to create K_ntt" << endl << endl;
-    return EXIT_FAILURE;
-  }
+   #ifdef ALL_MESSAGES
+   cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
+   #endif
+   cl_k_scale = clCreateKernel(Program, "K_scale", &errCode);
+   if (errCode != CL_SUCCESS) {
+     cout << endl << "HOST-Error: Failed to create K_ntt" << endl << endl;
+     return EXIT_FAILURE;
+   }
 
-  #ifdef ALL_MESSAGES
-  cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
-  #endif
-  cl_k_lift = clCreateKernel(Program, "K_lift", &errCode);
-  if (errCode != CL_SUCCESS) {
-    cout << endl << "HOST-Error: Failed to create K_ntt" << endl << endl;
-    return EXIT_FAILURE;
-  }
-
-  #ifdef ALL_MESSAGES
-  cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
-  #endif
-  cl_k_mulInv = clCreateKernel(Program, "K_mulInv", &errCode);
-  if (errCode != CL_SUCCESS) {
-    cout << endl << "HOST-Error: Failed to create K_ntt" << endl << endl;
-    return EXIT_FAILURE;
-  }
-
+   #ifdef ALL_MESSAGES
+   cout << "HOST-Info: Creating a Kernel: KVConstAdd ..." << endl;
+   #endif
+   cl_k_lift = clCreateKernel(Program, "K_lift", &errCode);
+   if (errCode != CL_SUCCESS) {
+     cout << endl << "HOST-Error: Failed to create K_ntt" << endl << endl;
+     return EXIT_FAILURE;
+   }
 
   // ================================================================
   // Step 4: Prepare Data to Run Kernel
@@ -675,7 +665,10 @@ int main(int argc, char* argv[])
 
 
   // -- 
-
+  for (int i = 0; i < 4; ++i) {
+    temp0[i]  = clCreateBuffer(Context, CL_MEM_READ_WRITE, UNIT_INT_COUNT * sizeof(int), NULL, &errCode);
+    checkError(errCode, __LINE__);
+  }
 
   for (int i = 0; i < 2; ++i) {
     temp1[i]  = clCreateBuffer(Context, CL_MEM_READ_WRITE, UNIT_INT_COUNT * sizeof(int), NULL, &errCode);
@@ -687,12 +680,12 @@ int main(int argc, char* argv[])
     checkError(errCode, __LINE__);
   }
 
-  for (int i = 0; i < 3; ++i) {
+  for (int i = 0; i < 4; ++i) {
     temp3[i]  = clCreateBuffer(Context, CL_MEM_READ_WRITE, UNIT_INT_COUNT * sizeof(int), NULL, &errCode);
     checkError(errCode, __LINE__);
   }
 
-  for (int i = 0; i < 3; ++i) {
+  for (int i = 0; i < 4; ++i) {
     temp4[i]  = clCreateBuffer(Context, CL_MEM_READ_WRITE, UNIT_INT_COUNT * sizeof(int), NULL, &errCode);
     checkError(errCode, __LINE__);
   }
@@ -793,7 +786,7 @@ int main(int argc, char* argv[])
         // cout << "Progress: " << rcved_bytes << "/" << total_bytes << endl;
       }
 
-      cout << "End receiving data "  << endl;
+      cout << "End receiving data: "<< total_bytes  << endl;
 
       int *ptr_data;
 
@@ -842,8 +835,10 @@ int main(int argc, char* argv[])
       }
 
       /* 6.3 Send Data to Device Memory */
+      clEnqueueBarrier(Command_Queue);
+      auto start = chrono::steady_clock::now();
 
-      cout << "Transfering data to device memory" << endl;
+      // cout << "Transfering data to device memory" << endl;
 
       for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 7; ++j) {
@@ -875,37 +870,32 @@ int main(int argc, char* argv[])
       }
 
       clEnqueueBarrier(Command_Queue);
+      auto end = chrono::steady_clock::now();
+      auto diff = end - start;
+
+      cout << chrono::duration <double, milli> (diff).count() << " ms" << endl;
 
       /* 6.4 Processing */
       // TODO
 
-      for (int i = 0; i < 8192; i++)
-      		  cout << ct_buf[0][0][1][i+8192*7] << " ";
-      	  cout << endl;
       cout << "Enter Inference ..." << endl;
-      inference_test();
+      inference();
       clEnqueueBarrier(Command_Queue);
       cout << "Leave Interface ..." << endl;
-
-      /* 6.5 Get Result and send it Back to Client */
-      int res[4*2*7*8192];
-
-
+    start = chrono::steady_clock::now();
 	  for (int j = 0; j < 4; ++j) {
 	    for (int k = 0; k < 2; ++k) {
 		  errCode = clEnqueueMigrateMemObjects(Command_Queue, 1, &GM_ct[0][j][k], CL_MIGRATE_MEM_OBJECT_HOST, 0, NULL, NULL);
 		  checkError(errCode, __LINE__);
 		  clEnqueueBarrier(Command_Queue);
+
 		  sock.write_n(ct_buf[0][j][k], 7*8192*sizeof(int));
 	    }
 	  }
-//	  for (int i = 0; i < 8192; i++)
-//		  cout << ct_buf[0][0][1][i+8192*7] << " ";
-//	  cout << endl;
-
-
-
-
+      clEnqueueBarrier(Command_Queue);
+      end = chrono::steady_clock::now();
+      diff = end - start;
+      cout << chrono::duration <double, milli> (diff).count() << " ms" << endl;
       cout << "Connection closed from " << sock.peer_address() << endl;
     }
 
@@ -1038,7 +1028,6 @@ int main(int argc, char* argv[])
   clReleaseKernel(cl_k_ntt);
   clReleaseKernel(cl_k_scale);
   clReleaseKernel(cl_k_lift);
-  clReleaseKernel(cl_k_mulInv);
 
   clReleaseProgram(Program);
   clReleaseCommandQueue(Command_Queue);

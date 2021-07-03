@@ -27,6 +27,8 @@ void K_add(ap_int<PRIME_BIT> *poly1,
   #pragma HLS INTERFACE s_axilite port = inv bundle = control
   #pragma HLS INTERFACE s_axilite port = return bundle = control
 
+
+
   for (int i = 0; i < N*RNS_NUM; i++) {
     #pragma HLS PIPELINE
     ap_int<PRIME_BIT+1> temp;
@@ -39,6 +41,9 @@ void K_add(ap_int<PRIME_BIT> *poly1,
     temp2 = center_(temp, MOD[idx3]);
     out[i] = temp2(PRIME_BIT-1, 0);
   }
+
+
+
   return;
 }
 }

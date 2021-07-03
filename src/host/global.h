@@ -13,7 +13,6 @@ extern cl_kernel cl_k_mov;
 extern cl_kernel cl_k_apply_galois;
 extern cl_kernel cl_k_scale;
 extern cl_kernel cl_k_lift;
-extern cl_kernel cl_k_mulInv;
 
 extern cl_mem GM_dense100[13][4];
 extern cl_mem GM_mask[4];
@@ -24,10 +23,11 @@ extern cl_mem GM_rlk[4][7][2];
 extern cl_mem GM_ct[25][4][2];
 extern cl_mem GM_gk[4][25][7][2];
 
+extern cl_mem temp0[4];
 extern cl_mem temp1[2];
 extern cl_mem temp2[2];
-extern cl_mem temp3[3];
-extern cl_mem temp4[3];
+extern cl_mem temp3[4];
+extern cl_mem temp4[4];
 extern cl_mem temp5[2];
 extern cl_mem temp6[7];
 extern cl_mem temp7[7];

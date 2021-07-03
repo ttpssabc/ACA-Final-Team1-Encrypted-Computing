@@ -175,14 +175,3 @@ int do_k_lift (cl_mem in1, cl_mem out, int which) {
   return errCode;
 
 }
-
-int do_k_mulInv (cl_mem in, cl_mem out, int inv) {
-  cl_int errCode = 0;
-  errCode |= clSetKernelArg(cl_k_mulInv,  0, sizeof(cl_mem), &in);
-  errCode |= clSetKernelArg(cl_k_mulInv,  1, sizeof(cl_mem), &out);
-  errCode |= clSetKernelArg(cl_k_mulInv,  2, sizeof(int), &inv);
-  errCode |= clEnqueueNDRangeKernel (Command_Queue, cl_k_mulInv, 1, NULL,
-                                     global_work_size, local_work_size, 0, NULL, NULL);
-
-  return errCode;
-}

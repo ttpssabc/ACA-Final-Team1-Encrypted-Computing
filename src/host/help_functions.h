@@ -34,4 +34,3 @@ int do_k_apply_galois (cl_mem in, int r, cl_mem out);
 int do_k_ntt (cl_mem in, cl_mem out, int mode, int which_poly);
 int do_k_scale (cl_mem in1, cl_mem in2, cl_mem out, int which);
 int do_k_lift (cl_mem in1, cl_mem out, int which);
-int do_k_mulInv (cl_mem in, cl_mem out, int inv);
