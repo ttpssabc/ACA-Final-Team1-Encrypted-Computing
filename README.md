@@ -92,12 +92,18 @@
 ## Build Setup
 
 - Follow `README.md` in `src/client/` to recover all files needed
-- Vitis: include `host.cpp` and all codes under `kernel/` and build kernel codes
-- Lots of details, email me <r09922028@csie.ntu.edu.tw> if you really want to give it a try
+	- Check out `client.cpp` to see how to send and receive
+	- `text.txt`, `rlk.txt`, `gk.txt`, and `ct.xt` are pickled file, where
+		- `text.txt`: class including encoder and encryptor
+		- `rlk.txt`: relinearization key
+		- `gk.txt`: galois key
+		- `ct.txt`: ciphertext 
+- Vitis: include `host.cpp` and all codes under `kernel/` and build kernel codes (Emulation-SW, EMulation-HW and Hardware)
 
 ## Run test
 
 1. Server run the built code
 2. run `client.py` under `src/client` and wait for the result
+3. Change `host/inference.cpp` to do different tests
 
 
