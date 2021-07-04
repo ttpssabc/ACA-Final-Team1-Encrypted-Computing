@@ -1,0 +1,45 @@
+===============================================================================
+Version:    v++ v2019.2 (64-bit)
+Build:      SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+Copyright:  Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Created:    Sun Jul  4 14:08:51 2021
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             modular_multiplication
+Target Device:           xilinx:u50:gen3x16_xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name             Type  Target              OpenCL Library          Compute Units
+----------------------  ----  ------------------  ----------------------  -------------
+modular_multiplication  c     fpga0:OCL_REGION_0  modular_multiplication  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     modular_multiplication
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit              Kernel Name             Module Name             Target Frequency  Estimated Frequency
+------------------------  ----------------------  ----------------------  ----------------  -------------------
+modular_multiplication_1  modular_multiplication  reduction_unsigned      300.300293        466.20047
+modular_multiplication_1  modular_multiplication  reduction               300.300293        444.839874
+modular_multiplication_1  modular_multiplication  modular_multiplication  300.300293        444.839874
+
+Latency Information
+Compute Unit              Kernel Name             Module Name             Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------------------  ----------------------  ----------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+modular_multiplication_1  modular_multiplication  reduction_unsigned      1               15             15            15              49.995 ns        49.995 ns       49.995 ns
+modular_multiplication_1  modular_multiplication  reduction               1               16             16            16              53.328 ns        53.328 ns       53.328 ns
+modular_multiplication_1  modular_multiplication  modular_multiplication  1               21             21            21              69.993 ns        69.993 ns       69.993 ns
+
+Area Information
+Compute Unit              Kernel Name             Module Name             FF    LUT   DSP  BRAM  URAM
+------------------------  ----------------------  ----------------------  ----  ----  ---  ----  ----
+modular_multiplication_1  modular_multiplication  reduction_unsigned      1506  1034  0    0     0
+modular_multiplication_1  modular_multiplication  reduction               1876  1504  0    0     0
+modular_multiplication_1  modular_multiplication  modular_multiplication  2673  1987  4    0     0
+-------------------------------------------------------------------------------

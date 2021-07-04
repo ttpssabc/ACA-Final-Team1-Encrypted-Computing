@@ -1,0 +1,194 @@
+
+
+================================================================
+== Vivado HLS Report for 'modular_multiplication'
+================================================================
+* Date:           Sun Jul  4 14:08:30 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        modular_multiplication
+* Solution:       solution
+* Product family: virtexuplus
+* Target device:  xcu50-fsvh2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 3.33 ns | 2.248 ns |   0.90 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |       21|       21| 69.993 ns | 69.993 ns |    1|    1| function |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------+-----------+---------+---------+-----------+-----------+-----+-----+----------+
+        |                     |           |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+        |       Instance      |   Module  |   min   |   max   |    min    |    max    | min | max |   Type   |
+        +---------------------+-----------+---------+---------+-----------+-----------+-----+-----+----------+
+        |grp_reduction_fu_62  |reduction  |       16|       16| 53.328 ns | 53.328 ns |    1|    1| function |
+        +---------------------+-----------+---------+---------+-----------+-----------+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  | URAM|
++---------------------+---------+-------+---------+--------+-----+
+|DSP                  |        -|      -|        -|       -|    -|
+|Expression           |        -|      -|        0|      10|    -|
+|FIFO                 |        -|      -|        -|       -|    -|
+|Instance             |        0|      4|     2327|    1913|    -|
+|Memory               |        -|      -|        -|       -|    -|
+|Multiplexer          |        -|      -|        -|       -|    -|
+|Register             |        0|      -|      346|      64|    -|
++---------------------+---------+-------+---------+--------+-----+
+|Total                |        0|      4|     2673|    1987|    0|
++---------------------+---------+-------+---------+--------+-----+
+|Available SLR        |     1344|   2976|   871680|  435840|  320|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization SLR (%)  |        0|   ~0  |    ~0   |   ~0   |    0|
++---------------------+---------+-------+---------+--------+-----+
+|Available            |     2688|   5952|  1743360|  871680|  640|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization (%)      |        0|   ~0  |    ~0   |   ~0   |    0|
++---------------------+---------+-------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------+-------------------------------------------+---------+-------+------+------+-----+
+    |                   Instance                   |                   Module                  | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
+    +----------------------------------------------+-------------------------------------------+---------+-------+------+------+-----+
+    |modular_multiplication_control_s_axi_U        |modular_multiplication_control_s_axi       |        0|      0|   220|   360|    0|
+    |modular_multiplication_mul_32s_32s_64_4_1_U9  |modular_multiplication_mul_32s_32s_64_4_1  |        0|      4|   231|    49|    0|
+    |grp_reduction_fu_62                           |reduction                                  |        0|      0|  1876|  1504|    0|
+    +----------------------------------------------+-------------------------------------------+---------+-------+------+------+-----+
+    |Total                                         |                                           |        0|      4|  2327|  1913|    0|
+    +----------------------------------------------+-------------------------------------------+---------+-------+------+------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |ap_block_pp0_stage0_11001  |    and   |      0|  0|   2|           1|           1|
+    |ap_ext_blocking_n          |    and   |      0|  0|   2|           2|           2|
+    |ap_int_blocking_n          |    and   |      0|  0|   2|           2|           2|
+    |ap_str_blocking_n          |    and   |      0|  0|   2|           2|           2|
+    |ap_enable_pp0              |    xor   |      0|  0|   2|           1|           2|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |Total                      |          |      0|  0|  10|           8|           9|
+    +---------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter13          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter14          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter15          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter16          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter17          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter18          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter19          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter20          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter21          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9           |   1|   0|    1|          0|
+    |ap_ext_blocking_n_reg             |   0|   0|    1|          1|
+    |ap_int_blocking_n_reg             |   0|   0|    1|          1|
+    |ap_rst_n_inv                      |   1|   0|    1|          0|
+    |ap_rst_reg_1                      |   1|   0|    1|          0|
+    |ap_rst_reg_2                      |   1|   0|    1|          0|
+    |ap_str_blocking_n_reg             |   0|   0|    1|          1|
+    |grp_reduction_fu_62_ap_start_reg  |   1|   0|    1|          0|
+    |idx_p_read_reg_85                 |  32|   0|   32|          0|
+    |p_V_read_reg_90                   |  32|   0|   32|          0|
+    |ret_V_reg_115                     |  64|   0|   64|          0|
+    |x_V_read_reg_100                  |  32|   0|   32|          0|
+    |y_V_read_reg_95                   |  32|   0|   32|          0|
+    |idx_p_read_reg_85                 |  64|  32|   32|          0|
+    |p_V_read_reg_90                   |  64|  32|   32|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 346|  64|  285|          3|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++-----------------------+-----+-----+------------+------------------------+--------------+
+|s_axi_control_AWVALID  |  in |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_AWREADY  | out |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_AWADDR   |  in |    6|    s_axi   |         control        |    scalar    |
+|s_axi_control_WVALID   |  in |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_WREADY   | out |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_WDATA    |  in |   32|    s_axi   |         control        |    scalar    |
+|s_axi_control_WSTRB    |  in |    4|    s_axi   |         control        |    scalar    |
+|s_axi_control_ARVALID  |  in |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_ARREADY  | out |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_ARADDR   |  in |    6|    s_axi   |         control        |    scalar    |
+|s_axi_control_RVALID   | out |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_RREADY   |  in |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_RDATA    | out |   32|    s_axi   |         control        |    scalar    |
+|s_axi_control_RRESP    | out |    2|    s_axi   |         control        |    scalar    |
+|s_axi_control_BVALID   | out |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_BREADY   |  in |    1|    s_axi   |         control        |    scalar    |
+|s_axi_control_BRESP    | out |    2|    s_axi   |         control        |    scalar    |
+|ap_clk                 |  in |    1| ap_ctrl_hs | modular_multiplication | return value |
+|ap_rst_n               |  in |    1| ap_ctrl_hs | modular_multiplication | return value |
+|event_done             | out |    1| ap_ctrl_hs | modular_multiplication | return value |
+|interrupt              | out |    1| ap_ctrl_hs | modular_multiplication | return value |
+|event_start            | out |    1| ap_ctrl_hs | modular_multiplication | return value |
+|stall_start_ext        | out |    1| ap_ctrl_hs | modular_multiplication | return value |
+|stall_done_ext         | out |    1| ap_ctrl_hs | modular_multiplication | return value |
+|stall_start_str        | out |    1| ap_ctrl_hs | modular_multiplication | return value |
+|stall_done_str         | out |    1| ap_ctrl_hs | modular_multiplication | return value |
+|stall_start_int        | out |    1| ap_ctrl_hs | modular_multiplication | return value |
+|stall_done_int         | out |    1| ap_ctrl_hs | modular_multiplication | return value |
++-----------------------+-----+-----+------------+------------------------+--------------+
+
