@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Design Guidance Report</title>
+<link rel="stylesheet" href="file:///opt/Xilinx/Vitis/2019.2/data/rulecheck/rulecheck.css">
+<script type="text/javascript" src="file:///opt/Xilinx/Vitis/2019.2/data/rulecheck/rulecheck.js"></script>
+</head><body>
+<center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
+<tr><td><b>Copyright</b></td><td>Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.</td></tr>
+<tr><td><b>Tool Version</b></td><td>xrcserver v.2019.2 (lin64) Build 0 </td></tr>
+<tr><td><b>Date</b></td><td>Sun Jul  4 22:47:19 2021</td></tr>
+<tr><td><b>Host</b></td><td>Msoc running 64-bit Ubuntu 18.04.5 LTS</td></tr>
+<tr><td><b>Command</b></td><td>Vitis IDE session HLS_Final_Project-Default</td></tr>
+</table></center><br>
+<table class="toc" border="1"><tr><td><b>Table of Contents</b></td></tr>
+<tr><td><a href="#REPORT SUMMARY">1 REPORT SUMMARY</a></tr></td>
+<tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
+<tr><td><a href="#CONFIG FILE DETAILS">3 CONFIG FILE DETAILS</a></tr></td>
+<tr><td><a href="#PERFORMANCE CHECKS MET">4 PERFORMANCE CHECKS MET</a></tr></td>
+</table>
+<a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
+<pre>Violations found: 40
+</pre>
+<pre>Rule Specs Violated: 4
+</pre>
+<pre>Rules Met: 22
+</pre>
+<pre>Rule Specs Met: 10
+</pre>
+<a name="VIOLATION DETAILS"></a><h1>2 VIOLATION DETAILS</h1>
+<table border="1">
+<caption>Items that may require attention</caption>
+<tr class="ns-sort">
+<th align="left">Id</th>
+<th align="left">Name</th>
+<th align="left">Severity</th>
+<th align="left" width="170">Full Name</th>
+<th align="left">Categories</th>
+<th align="left">Actual</th>
+<th align="left">Threshold</th>
+<th align="left" width="350">Details</th>
+<th align="left" width="380">Resolution</th>
+</tr>
+<tr>
+<td align="left">76</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[10] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">77</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[11] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">78</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[12] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">79</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[13] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">80</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[14] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">81</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[15] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">82</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[16] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">83</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[17] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">84</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[18] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">85</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[19] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">86</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[1] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">87</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[20] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">88</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[21] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">89</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[22] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">90</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[23] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">91</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[24] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">92</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[25] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">93</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[26] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">94</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[27] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">95</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[28] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">96</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[29] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">97</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[2] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">98</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[30] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">99</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[31] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">100</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[3] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">101</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[4] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">102</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[5] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">103</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[6] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">104</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[7] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">105</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[8] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">106</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[9] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">107</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|PLRAM[0] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">108</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|PLRAM[1] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">109</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|PLRAM[2] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">110</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">advisory</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|PLRAM[3] was used by 0 port(s).</td>
+<td align="left">Utilize all memory resources to maximize performance. Click <html>Devices with multiple DDR banks can provide very high bandwidth to global memory. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DDR_BANK_CONNECTIONS.html">DDR_BANK_CONNECTIONS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">111</td>
+<td align="left">PLRAM_USAGE</td>
+<td align="left">advisory</td>
+<td align="left">PLRAM Usage</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">PLRAMs were used by 0 port(s).</td>
+<td align="left">Utilize PLRAMs to maximize performance. Click <html>PLRAMs can increase your system performance by providing low-latency, high-bandwidth access to your data. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=PLRAM_USAGE.html">PLRAM_USAGE</a></html>.</td>
+</tr>
+<tr>
+<td align="left">117</td>
+<td align="left">UNUSED_CUS</td>
+<td align="left">warning</td>
+<td align="left">Compute Unit Calls - Minimum</td>
+<td align="left">Resource Usage</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Compute unit K_apply_galois_1 on device xilinx_u50_gen3x16_xdma_201920_3-1 was used 0 time(s).</td>
+<td align="left">Utilize all compute units on the device(s). Click <html>It is recommended to use all available compute units to achieve an optimum balance between resources and performance. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=UNUSED_CUS.html">UNUSED_CUS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">120</td>
+<td align="left">UNUSED_CUS</td>
+<td align="left">warning</td>
+<td align="left">Compute Unit Calls - Minimum</td>
+<td align="left">Resource Usage</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Compute unit K_mulConst_1 on device xilinx_u50_gen3x16_xdma_201920_3-1 was used 0 time(s).</td>
+<td align="left">Utilize all compute units on the device(s). Click <html>It is recommended to use all available compute units to achieve an optimum balance between resources and performance. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=UNUSED_CUS.html">UNUSED_CUS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">124</td>
+<td align="left">UNUSED_CUS</td>
+<td align="left">warning</td>
+<td align="left">Compute Unit Calls - Minimum</td>
+<td align="left">Resource Usage</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">Compute unit modular_multiplication_1 on device xilinx_u50_gen3x16_xdma_201920_3-1 was used 0 time(s).</td>
+<td align="left">Utilize all compute units on the device(s). Click <html>It is recommended to use all available compute units to achieve an optimum balance between resources and performance. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=UNUSED_CUS.html">UNUSED_CUS</a></html>.</td>
+</tr>
+<tr>
+<td align="left">125</td>
+<td align="left">DEVICE_UTIL</td>
+<td align="left">warning</td>
+<td align="left">Device Utilization (ms)</td>
+<td align="left">Resource Usage</td>
+<td align="left">0.000</td>
+<td align="left">> 0</td>
+<td align="left">Device xilinx_u50_gen3x16_xdma_201920_3-0 was utilized for 0.000 msec.</td>
+<td align="left">Utilize all devices in the platform. Click <html>It is recommended to use all available devices to achieve an optimum balance between resources and performance. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=DEVICE_UTIL.html">DEVICE_UTIL</a></html>.</td>
+</tr>
+</table>
+<br>
+<a name="CONFIG FILE DETAILS"></a><h1>3 CONFIG FILE DETAILS</h1>
+<pre>Config files found: 0
+</pre>
+<a name="PERFORMANCE CHECKS MET"></a><h1>4 PERFORMANCE CHECKS MET</h1>
+<table border="1">
+<caption>Items that offer design performance insight</caption>
+<tr class="ns-sort">
+<th align="left">Id</th>
+<th align="left">Name</th>
+<th align="left" width="170">Full Name</th>
+<th align="left">Categories</th>
+<th align="left">Actual</th>
+<th align="left">Threshold</th>
+<th align="left" width="350">Details</th>
+<th align="left" width="320">Rule Description</th>
+</tr>
+<tr>
+<td align="left">112</td>
+<td align="left">HBM_USAGE</td>
+<td align="left">High Bandwidth Memory Usage</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">1</td>
+<td align="left">> 0</td>
+<td align="left">High bandwidth memory was used by 1 port(s).</td>
+<td align="left"><html>This rule checks whether high bandwidth memory is utilized on the device.</html></td>
+</tr>
+<tr>
+<td align="left">113</td>
+<td align="left">HOST_MIGRATE_MEM</td>
+<td align="left">Migrate Memory API Calls</td>
+<td align="left">Host Data Transfer</td>
+<td align="left">328</td>
+<td align="left">> 0</td>
+<td align="left">Migrate Memory OpenCL APIs were used 328 time(s).</td>
+<td align="left"><html>This rule checks for the usage of migrate memory OpenCL APIs (e.g., clEnqueueMigrateMemObjects) in your host code.</html></td>
+</tr>
+<tr>
+<td align="left">114</td>
+<td align="left">HOST_READ_TRANSFER_SIZE</td>
+<td align="left">Average Read Size (KB)</td>
+<td align="left">Host Data Transfer</td>
+<td align="left">262.144</td>
+<td align="left">> 4.096</td>
+<td align="left">Host read average size was 262.144 KB across 8 transfers.</td>
+<td align="left"><html>This rule checks if multiple host read transfers can be consolidated into fewer transfers. This rule checks the amount of data read as well as the number of transfers requested.</html></td>
+</tr>
+<tr>
+<td align="left">115</td>
+<td align="left">HOST_WRITE_TRANSFER_SIZE</td>
+<td align="left">Average Write Size (KB)</td>
+<td align="left">Host Data Transfer</td>
+<td align="left">291.352</td>
+<td align="left">> 4.096</td>
+<td align="left">Host write average size was 291.352 KB across 359 transfers.</td>
+<td align="left"><html>This rule checks if multiple host write transfers can be consolidated into fewer transfers. This rule checks the amount of data written as well as the number of transfers requested.</html></td>
+</tr>
+<tr>
+<td align="left">116</td>
+<td align="left">UNUSED_CUS</td>
+<td align="left">Compute Unit Calls - Minimum</td>
+<td align="left">Resource Usage</td>
+<td align="left">64</td>
+<td align="left">> 0</td>
+<td align="left">Compute unit K_add_1 on device xilinx_u50_gen3x16_xdma_201920_3-1 was used 64 time(s).</td>
+<td align="left"><html>This rule checks for unused compute units on any devices in the platform.</html></td>
+</tr>
+<tr>
+<td align="left">118</td>
+<td align="left">UNUSED_CUS</td>
+<td align="left">Compute Unit Calls - Minimum</td>
+<td align="left">Resource Usage</td>
+<td align="left">28</td>
+<td align="left">> 0</td>
+<td align="left">Compute unit K_lift_1 on device xilinx_u50_gen3x16_xdma_201920_3-1 was used 28 time(s).</td>
+<td align="left"><html>This rule checks for unused compute units on any devices in the platform.</html></td>
+</tr>
+<tr>
+<td align="left">119</td>
+<td align="left">UNUSED_CUS</td>
+<td align="left">Compute Unit Calls - Minimum</td>
+<td align="left">Resource Usage</td>
+<td align="left">8</td>
+<td align="left">> 0</td>
+<td align="left">Compute unit K_mov_1 on device xilinx_u50_gen3x16_xdma_201920_3-1 was used 8 time(s).</td>
+<td align="left"><html>This rule checks for unused compute units on any devices in the platform.</html></td>
+</tr>
+<tr>
+<td align="left">121</td>
+<td align="left">UNUSED_CUS</td>
+<td align="left">Compute Unit Calls - Minimum</td>
+<td align="left">Resource Usage</td>
+<td align="left">88</td>
+<td align="left">> 0</td>
+<td align="left">Compute unit K_mulWise_1 on device xilinx_u50_gen3x16_xdma_201920_3-1 was used 88 time(s).</td>
+<td align="left"><html>This rule checks for unused compute units on any devices in the platform.</html></td>
+</tr>
+<tr>
+<td align="left">122</td>
+<td align="left">UNUSED_CUS</td>
+<td align="left">Compute Unit Calls - Minimum</td>
+<td align="left">Resource Usage</td>
+<td align="left">108</td>
+<td align="left">> 0</td>
+<td align="left">Compute unit K_ntt_1 on device xilinx_u50_gen3x16_xdma_201920_3-1 was used 108 time(s).</td>
+<td align="left"><html>This rule checks for unused compute units on any devices in the platform.</html></td>
+</tr>
+<tr>
+<td align="left">123</td>
+<td align="left">UNUSED_CUS</td>
+<td align="left">Compute Unit Calls - Minimum</td>
+<td align="left">Resource Usage</td>
+<td align="left">12</td>
+<td align="left">> 0</td>
+<td align="left">Compute unit K_scale_1 on device xilinx_u50_gen3x16_xdma_201920_3-1 was used 12 time(s).</td>
+<td align="left"><html>This rule checks for unused compute units on any devices in the platform.</html></td>
+</tr>
+<tr>
+<td align="left">126</td>
+<td align="left">DEVICE_UTIL</td>
+<td align="left">Device Utilization (ms)</td>
+<td align="left">Resource Usage</td>
+<td align="left">2421.882</td>
+<td align="left">> 0</td>
+<td align="left">Device xilinx_u50_gen3x16_xdma_201920_3-1 was utilized for 2421.882 msec.</td>
+<td align="left"><html>This rule checks that all devices are used by ensuring execution times are greater than 0. This execution time is calculated per device as the time in between the first CU starting to the last CU completing.</html></td>
+</tr>
+<tr>
+<td align="left">127</td>
+<td align="left">TRACE_MEMORY</td>
+<td align="left">Trace Memory</td>
+<td align="left">Resource Usage</td>
+<td align="left">NA</td>
+<td align="left">!= FIFO</td>
+<td align="left">Trace buffer memory was specified as NA.</td>
+<td align="left"><html>This rule checks whether a memory type was specified for the trace buffer.</html></td>
+</tr>
+<tr>
+<td align="left">128</td>
+<td align="left">OBJECTS_RELEASED</td>
+<td align="left">Objects Released</td>
+<td align="left">Resource Usage</td>
+<td align="left">true</td>
+<td align="left">true</td>
+<td align="left">Check for OpenCL objects released by the host code.</td>
+<td align="left"><html>This rule checks if OpenCL objects are properly released by the host code.</html></td>
+</tr>
+<tr>
+<td align="left">67</td>
+<td align="left">KERNEL_PORT_DATA_WIDTH</td>
+<td align="left">Port Data Width</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">32</td>
+<td align="left">= 512</td>
+<td align="left">Port K_mulWise_1/m_axi_gmem has a data width of 32.</td>
+<td align="left"><html>This rule checks the data width on all compute unit ports and compares it to the memory data width on the device.</html></td>
+</tr>
+<tr>
+<td align="left">68</td>
+<td align="left">KERNEL_PORT_DATA_WIDTH</td>
+<td align="left">Port Data Width</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">32</td>
+<td align="left">= 512</td>
+<td align="left">Port K_scale_1/m_axi_gmem has a data width of 32.</td>
+<td align="left"><html>This rule checks the data width on all compute unit ports and compares it to the memory data width on the device.</html></td>
+</tr>
+<tr>
+<td align="left">69</td>
+<td align="left">KERNEL_PORT_DATA_WIDTH</td>
+<td align="left">Port Data Width</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">32</td>
+<td align="left">= 512</td>
+<td align="left">Port K_mulConst_1/m_axi_gmem has a data width of 32.</td>
+<td align="left"><html>This rule checks the data width on all compute unit ports and compares it to the memory data width on the device.</html></td>
+</tr>
+<tr>
+<td align="left">70</td>
+<td align="left">KERNEL_PORT_DATA_WIDTH</td>
+<td align="left">Port Data Width</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">32</td>
+<td align="left">= 512</td>
+<td align="left">Port K_mov_1/m_axi_gmem has a data width of 32.</td>
+<td align="left"><html>This rule checks the data width on all compute unit ports and compares it to the memory data width on the device.</html></td>
+</tr>
+<tr>
+<td align="left">71</td>
+<td align="left">KERNEL_PORT_DATA_WIDTH</td>
+<td align="left">Port Data Width</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">32</td>
+<td align="left">= 512</td>
+<td align="left">Port K_ntt_1/m_axi_gmem has a data width of 32.</td>
+<td align="left"><html>This rule checks the data width on all compute unit ports and compares it to the memory data width on the device.</html></td>
+</tr>
+<tr>
+<td align="left">72</td>
+<td align="left">KERNEL_PORT_DATA_WIDTH</td>
+<td align="left">Port Data Width</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">32</td>
+<td align="left">= 512</td>
+<td align="left">Port K_apply_galois_1/m_axi_gmem has a data width of 32.</td>
+<td align="left"><html>This rule checks the data width on all compute unit ports and compares it to the memory data width on the device.</html></td>
+</tr>
+<tr>
+<td align="left">73</td>
+<td align="left">KERNEL_PORT_DATA_WIDTH</td>
+<td align="left">Port Data Width</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">32</td>
+<td align="left">= 512</td>
+<td align="left">Port K_add_1/m_axi_gmem has a data width of 32.</td>
+<td align="left"><html>This rule checks the data width on all compute unit ports and compares it to the memory data width on the device.</html></td>
+</tr>
+<tr>
+<td align="left">74</td>
+<td align="left">KERNEL_PORT_DATA_WIDTH</td>
+<td align="left">Port Data Width</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">32</td>
+<td align="left">= 512</td>
+<td align="left">Port K_lift_1/m_axi_gmem has a data width of 32.</td>
+<td align="left"><html>This rule checks the data width on all compute unit ports and compares it to the memory data width on the device.</html></td>
+</tr>
+<tr>
+<td align="left">75</td>
+<td align="left">MEMORY_CONNECTIONS</td>
+<td align="left">Memory Connections</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">1</td>
+<td align="left">> 0</td>
+<td align="left">Memory xilinx_u50_gen3x16_xdma_201920_3-1|HBM[0] was used by 1 port(s).</td>
+<td align="left"><html>This rule checks the number of compute unit ports connected to all DDR banks on the device.</html></td>
+</tr>
+</table>
+<br>
+</body></html>

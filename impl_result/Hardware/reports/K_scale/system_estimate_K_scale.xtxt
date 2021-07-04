@@ -1,0 +1,54 @@
+===============================================================================
+Version:    v++ v2019.2 (64-bit)
+Build:      SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+Copyright:  Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Created:    Sun Jul  4 19:17:53 2021
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             K_scale
+Target Device:           xilinx:u50:gen3x16_xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+K_scale      c     fpga0:OCL_REGION_0  K_scale         1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     K_scale
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name             Target Frequency  Estimated Frequency
+------------  -----------  ----------------------  ----------------  -------------------
+K_scale_1     K_scale      center                  300.300293        449.84256
+K_scale_1     K_scale      reduction_unsigned      300.300293        466.20047
+K_scale_1     K_scale      reduction               300.300293        449.84256
+K_scale_1     K_scale      modular_multiplication  300.300293        449.84256
+K_scale_1     K_scale      scale                   300.300293        449.84256
+K_scale_1     K_scale      K_scale                 300.300293        411.015198
+
+Latency Information
+Compute Unit  Kernel Name  Module Name             Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  ----------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+K_scale_1     K_scale      center                  1               0              0             0               0 ns             0 ns            0 ns
+K_scale_1     K_scale      reduction_unsigned      1               15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_scale_1     K_scale      reduction               1               16             16            16              53.328 ns        53.328 ns       53.328 ns
+K_scale_1     K_scale      modular_multiplication  1               21             21            21              69.993 ns        69.993 ns       69.993 ns
+K_scale_1     K_scale      scale                   32809           32809          32809         32809           0.109 ms         0.109 ms        0.109 ms
+K_scale_1     K_scale      K_scale                 229437          229436         229436        229436          0.765 ms         0.765 ms        0.765 ms
+
+Area Information
+Compute Unit  Kernel Name  Module Name             FF     LUT    DSP  BRAM  URAM
+------------  -----------  ----------------------  -----  -----  ---  ----  ----
+K_scale_1     K_scale      center                  0      204    0    0     0
+K_scale_1     K_scale      reduction_unsigned      1478   1030   0    0     0
+K_scale_1     K_scale      reduction               1818   1442   0    0     0
+K_scale_1     K_scale      modular_multiplication  2264   1561   4    0     0
+K_scale_1     K_scale      scale                   62763  52302  176  48    0
+K_scale_1     K_scale      K_scale                 64820  55175  176  290   0
+-------------------------------------------------------------------------------

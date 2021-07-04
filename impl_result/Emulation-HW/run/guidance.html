@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Design Guidance Report</title>
+<link rel="stylesheet" href="file:///opt/Xilinx/Vitis/2019.2/data/rulecheck/rulecheck.css">
+<script type="text/javascript" src="file:///opt/Xilinx/Vitis/2019.2/data/rulecheck/rulecheck.js"></script>
+</head><body>
+<center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
+<tr><td><b>Copyright</b></td><td>Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.</td></tr>
+<tr><td><b>Tool Version</b></td><td>xrcserver v.2019.2 (lin64) Build 0 </td></tr>
+<tr><td><b>Date</b></td><td>Sun Jul  4 18:36:50 2021</td></tr>
+<tr><td><b>Host</b></td><td>Msoc running 64-bit Ubuntu 18.04.5 LTS</td></tr>
+<tr><td><b>Command</b></td><td>Vitis IDE session HLS_Final_Project-Default</td></tr>
+</table></center><br>
+<table class="toc" border="1"><tr><td><b>Table of Contents</b></td></tr>
+<tr><td><a href="#REPORT SUMMARY">1 REPORT SUMMARY</a></tr></td>
+<tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
+<tr><td><a href="#CONFIG FILE DETAILS">3 CONFIG FILE DETAILS</a></tr></td>
+<tr><td><a href="#PERFORMANCE CHECKS MET">4 PERFORMANCE CHECKS MET</a></tr></td>
+</table>
+<a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
+<pre>Violations found: 2
+</pre>
+<pre>Rule Specs Violated: 2
+</pre>
+<pre>Rules Met: 1
+</pre>
+<pre>Rule Specs Met: 1
+</pre>
+<a name="VIOLATION DETAILS"></a><h1>2 VIOLATION DETAILS</h1>
+<table border="1">
+<caption>Items that may require attention</caption>
+<tr class="ns-sort">
+<th align="left">Id</th>
+<th align="left">Name</th>
+<th align="left">Severity</th>
+<th align="left" width="170">Full Name</th>
+<th align="left">Categories</th>
+<th align="left">Actual</th>
+<th align="left">Threshold</th>
+<th align="left" width="350">Details</th>
+<th align="left" width="380">Resolution</th>
+</tr>
+<tr>
+<td align="left">98</td>
+<td align="left">PLRAM_USAGE</td>
+<td align="left">advisory</td>
+<td align="left">PLRAM Usage</td>
+<td align="left">Kernel Data Transfer</td>
+<td align="left">0</td>
+<td align="left">> 0</td>
+<td align="left">PLRAMs were used by 0 port(s).</td>
+<td align="left">Utilize PLRAMs to maximize performance. Click <html>PLRAMs can increase your system performance by providing low-latency, high-bandwidth access to your data. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=PLRAM_USAGE.html">PLRAM_USAGE</a></html>.</td>
+</tr>
+<tr>
+<td align="left">99</td>
+<td align="left">TRACE_MEMORY</td>
+<td align="left">warning</td>
+<td align="left">Trace Memory</td>
+<td align="left">Resource Usage</td>
+<td align="left">FIFO</td>
+<td align="left">!= FIFO</td>
+<td align="left">Trace buffer memory was specified as FIFO.</td>
+<td align="left">Specify memory type to maximize trace buffer depth. Click <html>Users can specify the trace buffer memory type for profiling. The default is FIFO:8K, which may not be large enough to hold all trace events on a given device. For detailed explanation and recommendation: <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=TRACE_MEMORY.html">TRACE_MEMORY</a></html>.</td>
+</tr>
+</table>
+<br>
+<a name="CONFIG FILE DETAILS"></a><h1>3 CONFIG FILE DETAILS</h1>
+<pre>Config files found: 0
+</pre>
+<a name="PERFORMANCE CHECKS MET"></a><h1>4 PERFORMANCE CHECKS MET</h1>
+<table border="1">
+<caption>Items that offer design performance insight</caption>
+<tr class="ns-sort">
+<th align="left">Id</th>
+<th align="left">Name</th>
+<th align="left" width="170">Full Name</th>
+<th align="left">Categories</th>
+<th align="left">Actual</th>
+<th align="left">Threshold</th>
+<th align="left" width="350">Details</th>
+<th align="left" width="320">Rule Description</th>
+</tr>
+<tr>
+<td align="left">100</td>
+<td align="left">OBJECTS_RELEASED</td>
+<td align="left">Objects Released</td>
+<td align="left">Resource Usage</td>
+<td align="left">true</td>
+<td align="left">true</td>
+<td align="left">Check for OpenCL objects released by the host code.</td>
+<td align="left"><html>This rule checks if OpenCL objects are properly released by the host code.</html></td>
+</tr>
+</table>
+<br>
+</body></html>

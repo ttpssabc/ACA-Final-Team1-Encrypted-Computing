@@ -1,0 +1,149 @@
+===============================================================================
+Version:    v++ v2019.2 (64-bit)
+Build:      SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+Copyright:  Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Created:    Sun Jul  4 22:09:44 2021
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             binary_container_1
+Target Device:           xilinx:u50:gen3x16_xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 9
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name             Type  Target              OpenCL Library      Compute Units
+----------------------  ----  ------------------  ------------------  -------------
+K_mulWise               c     fpga0:OCL_REGION_0  binary_container_1  1
+K_scale                 c     fpga0:OCL_REGION_0  binary_container_1  1
+K_mulConst              c     fpga0:OCL_REGION_0  binary_container_1  1
+K_mov                   c     fpga0:OCL_REGION_0  binary_container_1  1
+K_ntt                   c     fpga0:OCL_REGION_0  binary_container_1  1
+K_apply_galois          c     fpga0:OCL_REGION_0  binary_container_1  1
+K_add                   c     fpga0:OCL_REGION_0  binary_container_1  1
+modular_multiplication  c     fpga0:OCL_REGION_0  binary_container_1  1
+K_lift                  c     fpga0:OCL_REGION_0  binary_container_1  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     binary_container_1
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit              Kernel Name             Module Name             Target Frequency  Estimated Frequency
+------------------------  ----------------------  ----------------------  ----------------  -------------------
+K_ntt_1                   K_ntt                   mul_mod                 300.300293        460.405182
+K_ntt_1                   K_ntt                   add_sub                 300.300293        449.84256
+K_ntt_1                   K_ntt                   butterfly               300.300293        449.84256
+K_ntt_1                   K_ntt                   NTT                     300.300293        411.015198
+K_ntt_1                   K_ntt                   reduction_unsigned      300.300293        466.20047
+K_ntt_1                   K_ntt                   reduction               300.300293        444.839874
+K_ntt_1                   K_ntt                   modular_multiplication  300.300293        444.839874
+K_ntt_1                   K_ntt                   K_ntt                   300.300293        395.726166
+K_add_1                   K_add                   K_add                   300.300293        411.015198
+K_apply_galois_1          K_apply_galois          K_apply_galois          300.300293        411.015198
+K_lift_1                  K_lift                  reduction_unsigned      300.300293        466.20047
+K_lift_1                  K_lift                  reduction               300.300293        444.839874
+K_lift_1                  K_lift                  modular_multiplication  300.300293        444.839874
+K_lift_1                  K_lift                  get_v                   300.300293        463.606842
+K_lift_1                  K_lift                  calc                    300.300293        411.015198
+K_lift_1                  K_lift                  lift                    300.300293        411.015198
+K_lift_1                  K_lift                  K_lift                  300.300293        411.015198
+K_mov_1                   K_mov                   K_mov                   300.300293        411.015198
+K_mulConst_1              K_mulConst              reduction_unsigned      300.300293        466.20047
+K_mulConst_1              K_mulConst              reduction               300.300293        444.839874
+K_mulConst_1              K_mulConst              modular_multiplication  300.300293        444.839874
+K_mulConst_1              K_mulConst              K_mulConst              300.300293        411.015198
+K_mulWise_1               K_mulWise               reduction_unsigned      300.300293        466.20047
+K_mulWise_1               K_mulWise               reduction               300.300293        444.839874
+K_mulWise_1               K_mulWise               modular_multiplication  300.300293        444.839874
+K_mulWise_1               K_mulWise               K_mulWise               300.300293        411.015198
+K_scale_1                 K_scale                 center                  300.300293        449.84256
+K_scale_1                 K_scale                 reduction_unsigned      300.300293        466.20047
+K_scale_1                 K_scale                 reduction               300.300293        449.84256
+K_scale_1                 K_scale                 modular_multiplication  300.300293        449.84256
+K_scale_1                 K_scale                 scale                   300.300293        449.84256
+K_scale_1                 K_scale                 K_scale                 300.300293        411.015198
+modular_multiplication_1  modular_multiplication  reduction_unsigned      300.300293        466.20047
+modular_multiplication_1  modular_multiplication  reduction               300.300293        444.839874
+modular_multiplication_1  modular_multiplication  modular_multiplication  300.300293        444.839874
+
+Latency Information
+Compute Unit              Kernel Name             Module Name             Start Interval   Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------------------  ----------------------  ----------------------  ---------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+K_ntt_1                   K_ntt                   mul_mod                 1                13             13            13              43.329 ns        43.329 ns       43.329 ns
+K_ntt_1                   K_ntt                   add_sub                 1                1              1             1               3.333 ns         3.333 ns        3.333 ns
+K_ntt_1                   K_ntt                   butterfly               1                19             19            19              63.327 ns        63.327 ns       63.327 ns
+K_ntt_1                   K_ntt                   NTT                     27211 ~ 27705    27211          27328         27705           90.694 us        91.084 us       92.341 us
+K_ntt_1                   K_ntt                   reduction_unsigned      1                15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_ntt_1                   K_ntt                   reduction               1                16             16            16              53.328 ns        53.328 ns       53.328 ns
+K_ntt_1                   K_ntt                   modular_multiplication  1                21             21            21              69.993 ns        69.993 ns       69.993 ns
+K_ntt_1                   K_ntt                   K_ntt                   313412 ~ 352786  313411         320897        352785          1.045 ms         1.070 ms        1.176 ms
+K_add_1                   K_add                   K_add                   131090           131089         131089        131089          0.437 ms         0.437 ms        0.437 ms
+K_apply_galois_1          K_apply_galois          K_apply_galois          65558            65557          65557         65557           0.219 ms         0.219 ms        0.219 ms
+K_lift_1                  K_lift                  reduction_unsigned      1                15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_lift_1                  K_lift                  reduction               1                16             16            16              53.328 ns        53.328 ns       53.328 ns
+K_lift_1                  K_lift                  modular_multiplication  1                21             21            21              69.993 ns        69.993 ns       69.993 ns
+K_lift_1                  K_lift                  get_v                   8                15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_lift_1                  K_lift                  calc                    8                35             35            35              0.117 us         0.117 us        0.117 us
+K_lift_1                  K_lift                  lift                    32845            32845          32845         32845           0.109 ms         0.109 ms        0.109 ms
+K_lift_1                  K_lift                  K_lift                  163937           163936         163936        163936          0.546 ms         0.546 ms        0.546 ms
+K_mov_1                   K_mov                   K_mov                   65551            65550          65550         65550           0.218 ms         0.218 ms        0.218 ms
+K_mulConst_1              K_mulConst              reduction_unsigned      1                15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_mulConst_1              K_mulConst              reduction               1                16             16            16              53.328 ns        53.328 ns       53.328 ns
+K_mulConst_1              K_mulConst              modular_multiplication  1                21             21            21              69.993 ns        69.993 ns       69.993 ns
+K_mulConst_1              K_mulConst              K_mulConst              65573            65572          65572         65572           0.219 ms         0.219 ms        0.219 ms
+K_mulWise_1               K_mulWise               reduction_unsigned      1                15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_mulWise_1               K_mulWise               reduction               1                16             16            16              53.328 ns        53.328 ns       53.328 ns
+K_mulWise_1               K_mulWise               modular_multiplication  1                21             21            21              69.993 ns        69.993 ns       69.993 ns
+K_mulWise_1               K_mulWise               K_mulWise               131109           131108         131108        131108          0.437 ms         0.437 ms        0.437 ms
+K_scale_1                 K_scale                 center                  1                0              0             0               0 ns             0 ns            0 ns
+K_scale_1                 K_scale                 reduction_unsigned      1                15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_scale_1                 K_scale                 reduction               1                16             16            16              53.328 ns        53.328 ns       53.328 ns
+K_scale_1                 K_scale                 modular_multiplication  1                21             21            21              69.993 ns        69.993 ns       69.993 ns
+K_scale_1                 K_scale                 scale                   32809            32809          32809         32809           0.109 ms         0.109 ms        0.109 ms
+K_scale_1                 K_scale                 K_scale                 229437           229436         229436        229436          0.765 ms         0.765 ms        0.765 ms
+modular_multiplication_1  modular_multiplication  reduction_unsigned      1                15             15            15              49.995 ns        49.995 ns       49.995 ns
+modular_multiplication_1  modular_multiplication  reduction               1                16             16            16              53.328 ns        53.328 ns       53.328 ns
+modular_multiplication_1  modular_multiplication  modular_multiplication  1                21             21            21              69.993 ns        69.993 ns       69.993 ns
+
+Area Information
+Compute Unit              Kernel Name             Module Name             FF      LUT    DSP  BRAM  URAM
+------------------------  ----------------------  ----------------------  ------  -----  ---  ----  ----
+K_ntt_1                   K_ntt                   mul_mod                 1335    508    12   2     0
+K_ntt_1                   K_ntt                   add_sub                 129     442    0    0     0
+K_ntt_1                   K_ntt                   butterfly               3836    1685   12   2     0
+K_ntt_1                   K_ntt                   NTT                     10910   7585   25   444   0
+K_ntt_1                   K_ntt                   reduction_unsigned      1478    1030   0    0     0
+K_ntt_1                   K_ntt                   reduction               1820    1485   0    0     0
+K_ntt_1                   K_ntt                   modular_multiplication  2253    1604   4    0     0
+K_ntt_1                   K_ntt                   K_ntt                   19276   15792  29   560   0
+K_add_1                   K_add                   K_add                   1643    1723   0    2     0
+K_apply_galois_1          K_apply_galois          K_apply_galois          1579    1511   4    2     0
+K_lift_1                  K_lift                  reduction_unsigned      1478    1030   0    0     0
+K_lift_1                  K_lift                  reduction               1820    1485   0    0     0
+K_lift_1                  K_lift                  modular_multiplication  2264    1604   4    0     0
+K_lift_1                  K_lift                  get_v                   5143    2940   64   0     0
+K_lift_1                  K_lift                  calc                    5456    5199   8    0     0
+K_lift_1                  K_lift                  lift                    105136  93066  264  0     0
+K_lift_1                  K_lift                  K_lift                  106856  95493  264  242   0
+K_mov_1                   K_mov                   K_mov                   883     1059   0    2     0
+K_mulConst_1              K_mulConst              reduction_unsigned      1478    1030   0    0     0
+K_mulConst_1              K_mulConst              reduction               1820    1485   0    0     0
+K_mulConst_1              K_mulConst              modular_multiplication  2266    1604   4    0     0
+K_mulConst_1              K_mulConst              K_mulConst              3408    2880   4    4     0
+K_mulWise_1               K_mulWise               reduction_unsigned      1478    1030   0    0     0
+K_mulWise_1               K_mulWise               reduction               1820    1485   0    0     0
+K_mulWise_1               K_mulWise               modular_multiplication  2266    1604   4    0     0
+K_mulWise_1               K_mulWise               K_mulWise               3625    3021   4    2     0
+K_scale_1                 K_scale                 center                  0       204    0    0     0
+K_scale_1                 K_scale                 reduction_unsigned      1478    1030   0    0     0
+K_scale_1                 K_scale                 reduction               1818    1442   0    0     0
+K_scale_1                 K_scale                 modular_multiplication  2264    1561   4    0     0
+K_scale_1                 K_scale                 scale                   62763   52302  176  48    0
+K_scale_1                 K_scale                 K_scale                 64820   55175  176  290   0
+modular_multiplication_1  modular_multiplication  reduction_unsigned      1506    1028   0    0     0
+modular_multiplication_1  modular_multiplication  reduction               1876    1492   0    0     0
+modular_multiplication_1  modular_multiplication  modular_multiplication  2673    1969   4    0     0
+-------------------------------------------------------------------------------

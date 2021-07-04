@@ -1,0 +1,57 @@
+===============================================================================
+Version:    v++ v2019.2 (64-bit)
+Build:      SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+Copyright:  Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Created:    Sun Jul  4 19:13:35 2021
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             K_lift
+Target Device:           xilinx:u50:gen3x16_xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+K_lift       c     fpga0:OCL_REGION_0  K_lift          1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     K_lift
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name             Target Frequency  Estimated Frequency
+------------  -----------  ----------------------  ----------------  -------------------
+K_lift_1      K_lift       reduction_unsigned      300.300293        466.20047
+K_lift_1      K_lift       reduction               300.300293        444.839874
+K_lift_1      K_lift       modular_multiplication  300.300293        444.839874
+K_lift_1      K_lift       get_v                   300.300293        463.606842
+K_lift_1      K_lift       calc                    300.300293        411.015198
+K_lift_1      K_lift       lift                    300.300293        411.015198
+K_lift_1      K_lift       K_lift                  300.300293        411.015198
+
+Latency Information
+Compute Unit  Kernel Name  Module Name             Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  ----------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+K_lift_1      K_lift       reduction_unsigned      1               15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_lift_1      K_lift       reduction               1               16             16            16              53.328 ns        53.328 ns       53.328 ns
+K_lift_1      K_lift       modular_multiplication  1               21             21            21              69.993 ns        69.993 ns       69.993 ns
+K_lift_1      K_lift       get_v                   8               15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_lift_1      K_lift       calc                    8               35             35            35              0.117 us         0.117 us        0.117 us
+K_lift_1      K_lift       lift                    32845           32845          32845         32845           0.109 ms         0.109 ms        0.109 ms
+K_lift_1      K_lift       K_lift                  163937          163936         163936        163936          0.546 ms         0.546 ms        0.546 ms
+
+Area Information
+Compute Unit  Kernel Name  Module Name             FF      LUT    DSP  BRAM  URAM
+------------  -----------  ----------------------  ------  -----  ---  ----  ----
+K_lift_1      K_lift       reduction_unsigned      1478    1030   0    0     0
+K_lift_1      K_lift       reduction               1820    1485   0    0     0
+K_lift_1      K_lift       modular_multiplication  2264    1604   4    0     0
+K_lift_1      K_lift       get_v                   5143    2940   64   0     0
+K_lift_1      K_lift       calc                    5456    5199   8    0     0
+K_lift_1      K_lift       lift                    105136  93066  264  0     0
+K_lift_1      K_lift       K_lift                  106856  95493  264  242   0
+-------------------------------------------------------------------------------

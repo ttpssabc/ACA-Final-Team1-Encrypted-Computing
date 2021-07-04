@@ -1,0 +1,60 @@
+===============================================================================
+Version:    v++ v2019.2 (64-bit)
+Build:      SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+Copyright:  Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Created:    Sun Jul  4 19:10:29 2021
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             K_ntt
+Target Device:           xilinx:u50:gen3x16_xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+K_ntt        c     fpga0:OCL_REGION_0  K_ntt           1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     K_ntt
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name             Target Frequency  Estimated Frequency
+------------  -----------  ----------------------  ----------------  -------------------
+K_ntt_1       K_ntt        mul_mod                 300.300293        460.405182
+K_ntt_1       K_ntt        add_sub                 300.300293        449.84256
+K_ntt_1       K_ntt        butterfly               300.300293        449.84256
+K_ntt_1       K_ntt        NTT                     300.300293        411.015198
+K_ntt_1       K_ntt        reduction_unsigned      300.300293        466.20047
+K_ntt_1       K_ntt        reduction               300.300293        444.839874
+K_ntt_1       K_ntt        modular_multiplication  300.300293        444.839874
+K_ntt_1       K_ntt        K_ntt                   300.300293        395.726166
+
+Latency Information
+Compute Unit  Kernel Name  Module Name             Start Interval   Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  ----------------------  ---------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+K_ntt_1       K_ntt        mul_mod                 1                13             13            13              43.329 ns        43.329 ns       43.329 ns
+K_ntt_1       K_ntt        add_sub                 1                1              1             1               3.333 ns         3.333 ns        3.333 ns
+K_ntt_1       K_ntt        butterfly               1                19             19            19              63.327 ns        63.327 ns       63.327 ns
+K_ntt_1       K_ntt        NTT                     27211 ~ 27705    27211          27328         27705           90.694 us        91.084 us       92.341 us
+K_ntt_1       K_ntt        reduction_unsigned      1                15             15            15              49.995 ns        49.995 ns       49.995 ns
+K_ntt_1       K_ntt        reduction               1                16             16            16              53.328 ns        53.328 ns       53.328 ns
+K_ntt_1       K_ntt        modular_multiplication  1                21             21            21              69.993 ns        69.993 ns       69.993 ns
+K_ntt_1       K_ntt        K_ntt                   313412 ~ 352786  313411         320897        352785          1.045 ms         1.070 ms        1.176 ms
+
+Area Information
+Compute Unit  Kernel Name  Module Name             FF     LUT    DSP  BRAM  URAM
+------------  -----------  ----------------------  -----  -----  ---  ----  ----
+K_ntt_1       K_ntt        mul_mod                 1335   508    12   2     0
+K_ntt_1       K_ntt        add_sub                 129    442    0    0     0
+K_ntt_1       K_ntt        butterfly               3836   1685   12   2     0
+K_ntt_1       K_ntt        NTT                     10910  7585   25   444   0
+K_ntt_1       K_ntt        reduction_unsigned      1478   1030   0    0     0
+K_ntt_1       K_ntt        reduction               1820   1485   0    0     0
+K_ntt_1       K_ntt        modular_multiplication  2253   1604   4    0     0
+K_ntt_1       K_ntt        K_ntt                   19276  15792  29   560   0
+-------------------------------------------------------------------------------

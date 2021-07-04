@@ -1,0 +1,376 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun 28 02:14:39 2021
+# Process ID: 19149
+# Current directory: /home/r09922017/workspace/HLS_Final_Project/Emulation-HW/.run/19042/hw_em/device0/binary_0/behav_waveform/xsim
+# Command line: xsim -log simulate.log -mode tcl -source {xsim.dir/emu_wrapper_behav/xsim_script.tcl}
+# Log file: /home/r09922017/workspace/HLS_Final_Project/Emulation-HW/.run/19042/hw_em/device0/binary_0/behav_waveform/xsim/simulate.log
+# Journal file: /home/r09922017/workspace/HLS_Final_Project/Emulation-HW/.run/19042/hw_em/device0/binary_0/behav_waveform/xsim/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/emu_wrapper_behav/xsim_script.tcl
+# xsim {emu_wrapper_behav} -wdb {xilinx_u50_gen3x16_xdma_201920_3-0-binary_container_1.wdb} -autoloadwcfg -tclbatch {emu_wrapper.tcl} -key {Behavioral:sim_1:Functional:emu_wrapper} -protoinst {protoinst_files/bd_3a93.protoinst} -protoinst {protoinst_files/bd_9678.protoinst} -protoinst {protoinst_files/emu.protoinst} -protoinst {./dr_behav.protoinst}
+Vivado Simulator 2019.2
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_hub.inst.s_aximm_wr_util. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_hub.inst.s_aximm_wr_util_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon0.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon0.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon0.inst.rd_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon0.inst.rd_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Info: (I804) /IEEE_Std_1666/deprecated: sc_sensitive_neg is deprecated use sc_sensitive << with neg() instead
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon1.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon1.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon1.inst.wr_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon1.inst.wr_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon1.inst.mon_saxi_rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon1.inst.mon_saxi_rd_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon1.inst.mon_saxi_wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon1.inst.mon_saxi_wr_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon2.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon2.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon2.inst.rd_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon2.inst.rd_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon3.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon3.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon3.inst.wr_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon3.inst.wr_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon3.inst.mon_saxi_rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon3.inst.mon_saxi_rd_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon3.inst.mon_saxi_wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon3.inst.mon_saxi_wr_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon4.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon4.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon4.inst.rd_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon4.inst.rd_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon5.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon5.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon5.inst.wr_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon5.inst.wr_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon5.inst.mon_saxi_rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon5.inst.mon_saxi_rd_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon5.inst.mon_saxi_wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon5.inst.mon_saxi_wr_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon6.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon6.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon6.inst.rd_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon6.inst.rd_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon7.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon7.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon7.inst.wr_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon7.inst.wr_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon7.inst.mon_saxi_rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon7.inst.mon_saxi_rd_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon7.inst.mon_saxi_wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon7.inst.mon_saxi_wr_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon8.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon8.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon8.inst.rd_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon8.inst.rd_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon9.inst.rd_mon.rd_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon9.inst.rd_mon.rd_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon9.inst.wr_mon.wr_skt. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon9.inst.wr_mon.wr_skt_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon9.inst.mon_saxi_rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon9.inst.mon_saxi_rd_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.System_DPA.dpa_mon9.inst.mon_saxi_wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.System_DPA.dpa_mon9.inst.mon_saxi_wr_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.rd_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.wr_socket_0
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.rd_socket_1
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.wr_socket_1
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.rd_socket_2
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.wr_socket_2
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.rd_socket_3
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.wr_socket_3
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.rd_socket_4
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.wr_socket_4
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.rd_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.rd_socket_5
+In file: sc_object_manager.cpp:161
+
+Warning: (W505) object already exists: .emu_wrapper.emu_i.hmss_0.inst.wr_socket. Latter declaration will be renamed to .emu_wrapper.emu_i.hmss_0.inst.wr_socket_5
+In file: sc_object_manager.cpp:161
+
+Info: (I804) /IEEE_Std_1666/deprecated: sc_sensitive_pos is deprecated use sc_sensitive << with pos() instead
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_3a93.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_3a93.protoinst for the following reason(s):
+There are no instances of module "bd_3a93" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9678.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_9678.protoinst for the following reason(s):
+There are no instances of module "bd_9678" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/emu.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_add_1/m_axi_gmem
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_add_1/s_axi_control
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_apply_galois_1/m_axi_gmem
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_apply_galois_1/s_axi_control
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_mov_1/m_axi_gmem
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_mov_1/s_axi_control
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_mulConst_1/m_axi_gmem
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_mulConst_1/s_axi_control
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_mulWise_1/m_axi_gmem
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//K_mulWise_1/s_axi_control
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/S_AXIMM
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M03_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M04_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M05_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M06_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M07_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M08_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M09_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M10_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/M11_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m00_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m00_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m00_couplers/m00_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m00_couplers/m00_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m01_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m01_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m01_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m01_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m01_couplers/m01_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m01_couplers/m01_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m02_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m02_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m02_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m02_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m02_couplers/m02_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m02_couplers/m02_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m03_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m03_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m03_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m03_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m03_couplers/m03_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m03_couplers/m03_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m04_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m04_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m04_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m04_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m04_couplers/m04_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m04_couplers/m04_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m05_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m05_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m05_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m05_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m05_couplers/m05_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m05_couplers/m05_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m06_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m06_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m06_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m06_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m06_couplers/m06_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m06_couplers/m06_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m07_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m07_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m07_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m07_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m07_couplers/m07_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m07_couplers/m07_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m08_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m08_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m08_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m08_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m08_couplers/m08_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m08_couplers/m08_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m09_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m09_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m09_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m09_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m09_couplers/m09_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m09_couplers/m09_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m10_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m10_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m10_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m10_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m10_couplers/m10_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m10_couplers/m10_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m11_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m11_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m11_couplers/auto_cc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m11_couplers/auto_cc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m11_couplers/m11_regslice/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/m11_couplers/m11_regslice/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/s00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/s00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /emu_wrapper/emu_i//System_DPA/dpa_ctrl_interconnect/s00_couplers/auto_pc/M_AXI
+INFO: [Common 17-14] Message 'Wavedata 42-564' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Wavedata 42-565] Reading protoinst file ./dr_behav.protoinst
+WARNING: [Wavedata 42-559] Protocol instance "/emu_wrapper/emu_i//interconnect_axilite_user_slr0/M00_AXI" was created but is non-functional for the following reason(s):
+Port "AWADDR" must be a logic vector
+Port "AWPROT" must be a logic vector
+Port "AWLEN" must be a logic vector
+Port "AWSIZE" must be a logic vector
+Port "AWBURST" must be a logic vector
+Port "AWCACHE" must be a logic vector
+Port "WDATA" must be a logic vector
+Port "WSTRB" must be a logic vector
+Port "BRESP" must be a logic vector
+Port "ARADDR" must be a logic vector
+Port "ARPROT" must be a logic vector
+Port "ARLEN" must be a logic vector
+Port "ARSIZE" must be a logic vector
+Port "ARBURST" must be a logic vector
+Port "ARCACHE" must be a logic vector
+Port "RDATA" must be a logic vector
+Port "RRESP" must be a logic vector
+
+WARNING: [Wavedata 42-559] Protocol instance "/emu_wrapper/emu_i//interconnect_axilite_user_slr0/m00_couplers/M_AXI" was created but is non-functional for the following reason(s):
+Port "AWADDR" must be a logic vector
+Port "AWPROT" must be a logic vector
+Port "AWLEN" must be a logic vector
+Port "AWSIZE" must be a logic vector
+Port "AWBURST" must be a logic vector
+Port "AWCACHE" must be a logic vector
+Port "WDATA" must be a logic vector
+Port "WSTRB" must be a logic vector
+Port "BRESP" must be a logic vector
+Port "ARADDR" must be a logic vector
+Port "ARPROT" must be a logic vector
+Port "ARLEN" must be a logic vector
+Port "ARSIZE" must be a logic vector
+Port "ARBURST" must be a logic vector
+Port "ARCACHE" must be a logic vector
+Port "RDATA" must be a logic vector
+Port "RRESP" must be a logic vector
+
+WARNING: [Wavedata 42-559] Protocol instance "/emu_wrapper/emu_i//interconnect_axilite_user_slr0/m00_couplers/S_AXI" was created but is non-functional for the following reason(s):
+Port "AWADDR" must be a logic vector
+Port "AWPROT" must be a logic vector
+Port "AWLEN" must be a logic vector
+Port "AWSIZE" must be a logic vector
+Port "AWBURST" must be a logic vector
+Port "AWCACHE" must be a logic vector
+Port "WDATA" must be a logic vector
+Port "WSTRB" must be a logic vector
+Port "BRESP" must be a logic vector
+Port "ARADDR" must be a logic vector
+Port "ARPROT" must be a logic vector
+Port "ARLEN" must be a logic vector
+Port "ARSIZE" must be a logic vector
+Port "ARBURST" must be a logic vector
+Port "ARCACHE" must be a logic vector
+Port "RDATA" must be a logic vector
+Port "RRESP" must be a logic vector
+
+Time resolution is 1 ps
+source emu_wrapper.tcl
+## log_wave -r *
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## if { [info exists ::env(VITIS_WAVEFORM) ] } {
+##   if {[file exists $::env(VITIS_WAVEFORM)] == 1} {
+##     open_wave_config $::env(VITIS_WAVEFORM)
+##   }
+## }
+## if { [file exists preprocess_profile.tcl] } {
+##   source -notrace preprocess_profile.tcl
+## }
+## puts "We are running Simulator for infinite time. Added some default signals in the waveform. You can pause simulation and add signals and then resume the simulaion again."
+We are running Simulator for infinite time. Added some default signals in the waveform. You can pause simulation and add signals and then resume the simulaion again.
+## puts ""
+
+## puts "Stopping at breakpoint in simulator also stops the host code execution"
+Stopping at breakpoint in simulator also stops the host code execution
+## puts ""
+
+## if { [info exists ::env(VITIS_LAUNCH_WAVEFORM_GUI) ] } {
+##   run 1ns
+## } else {
+##   run all
+## }
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+$stop called at time : 58890110 ps
+run: Time (s): cpu = 00:00:18 ; elapsed = 00:01:44 . Memory (MB): peak = 1945.633 ; gain = 0.000 ; free physical = 2121 ; free virtual = 5596
+## if { [file exists profile.tcl] } {
+##   source -notrace profile.tcl
+## }
+Waiting for protocol analyzers to complete...
+Done!
+## if { [info exists ::env(VITIS_LAUNCH_WAVEFORM_BATCH) ] } {
+## quit
+## }
+INFO: [Common 17-206] Exiting xsim at Mon Jun 28 02:16:42 2021...
